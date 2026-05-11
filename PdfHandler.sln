@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.5.11716.220
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PdfHandler.API", "PdfHandler.API", "{5FD18840-2A14-4256-BFDB-57CD072DFFC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Worker", "Worker", "{86D0B186-E988-4BA9-ABAE-6CC8AFD1A1A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{E9BABF17-3155-4661-B3D3-77F629651B97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{346C5518-9487-4322-9CD1-B22F15CF8B9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfHandler.Common", "Common\PdfHandler.Common.csproj", "{D3B13E7D-F36E-4AC1-B4D2-CA5C819A420D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfHandler.Worker", "PdfHandler.Worker\PdfHandler.Worker.csproj", "{8537D43B-CE46-4D8B-B202-057F693AC3A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfHandler.API", "PdfHandler.API\PdfHandler.API\PdfHandler.API.csproj", "{03E88FE7-3AD2-478B-AF0B-927F0AD9A33D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{5DB4470C-A8CC-49CA-A03E-D36DD1D47145}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3B13E7D-F36E-4AC1-B4D2-CA5C819A420D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B13E7D-F36E-4AC1-B4D2-CA5C819A420D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B13E7D-F36E-4AC1-B4D2-CA5C819A420D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B13E7D-F36E-4AC1-B4D2-CA5C819A420D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8537D43B-CE46-4D8B-B202-057F693AC3A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8537D43B-CE46-4D8B-B202-057F693AC3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8537D43B-CE46-4D8B-B202-057F693AC3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8537D43B-CE46-4D8B-B202-057F693AC3A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03E88FE7-3AD2-478B-AF0B-927F0AD9A33D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03E88FE7-3AD2-478B-AF0B-927F0AD9A33D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03E88FE7-3AD2-478B-AF0B-927F0AD9A33D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03E88FE7-3AD2-478B-AF0B-927F0AD9A33D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5FD18840-2A14-4256-BFDB-57CD072DFFC5} = {346C5518-9487-4322-9CD1-B22F15CF8B9C}
+		{86D0B186-E988-4BA9-ABAE-6CC8AFD1A1A0} = {346C5518-9487-4322-9CD1-B22F15CF8B9C}
+		{E9BABF17-3155-4661-B3D3-77F629651B97} = {346C5518-9487-4322-9CD1-B22F15CF8B9C}
+		{D3B13E7D-F36E-4AC1-B4D2-CA5C819A420D} = {E9BABF17-3155-4661-B3D3-77F629651B97}
+		{8537D43B-CE46-4D8B-B202-057F693AC3A5} = {86D0B186-E988-4BA9-ABAE-6CC8AFD1A1A0}
+		{03E88FE7-3AD2-478B-AF0B-927F0AD9A33D} = {5FD18840-2A14-4256-BFDB-57CD072DFFC5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {225173B6-BCDD-4E91-BF42-93E72184F4F2}
+	EndGlobalSection
+EndGlobal

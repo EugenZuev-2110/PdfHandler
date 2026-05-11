@@ -1,0 +1,10 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PdfHandler.Common;
+
+public enum ProcessingStatus { Pending, Processing, Completed, Failed }
+public record PdfTask(Guid DocumentId, string FilePath);
