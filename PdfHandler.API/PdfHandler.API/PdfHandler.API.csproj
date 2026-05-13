@@ -24,8 +24,4 @@
     <ProjectReference Include="..\..\Common\PdfHandler.Common.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
