@@ -1,10 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using PdfHandler.API.Data;
+using PdfHandler.API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options => options.UseNpgsql(connectionString));
+builder.Services.AddScoped<QueueService>();
+builder.Services.AddScoped<DocumentService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
